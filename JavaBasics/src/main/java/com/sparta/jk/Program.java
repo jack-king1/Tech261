@@ -7,7 +7,7 @@ public class Program {
         System.out.println(getTimeofDay(timeOfDay));
     }
 
-    private static String getTimeofDay(int timeOfDay) {
+    public static String getTimeofDay(int timeOfDay) {
         String greeting = "";
 
         if (timeOfDay >= 5 && timeOfDay <= 12)

@@ -40,4 +40,13 @@ public class IntConverterTest {
         int expected = 1;
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    @DisplayName("Test if empty array is zero")
+    void checkOutputOfAnEmptyArrayIsZero(){
+        int[] numbers = new int[] {};
+        int actual = IntConverter.getSingleIntFromArray(numbers);
+        int expected = 0;
+        Assertions.assertEquals(expected, actual);
+    }
 }

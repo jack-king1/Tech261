@@ -49,4 +49,13 @@ public class IntConverterTest {
         int expected = 0;
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    @DisplayName("Test if array values with more than one integer results in correct output [0,0,0,32,2,3,6]")
+    void checkOutputOfArrayWithValuesWithTwoIntegers(){
+        int[] numbers = new int[] {0,0,0,32,2,3,6};
+        int actual = IntConverter.getSingleIntFromArray(numbers);
+        int expected = 32236;
+        Assertions.assertEquals(expected, actual);
+    }
 }

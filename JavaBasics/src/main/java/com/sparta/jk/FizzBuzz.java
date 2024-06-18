@@ -13,7 +13,7 @@ public class FizzBuzz {
         if(num % 5 == 0){
             fizzBuzzString += "Buzz";
         }
-
+        
         if(fizzBuzzString == ""){
             fizzBuzzString = Integer.toString(num);
         }

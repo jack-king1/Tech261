@@ -92,7 +92,7 @@ public class FizzBuzzTests {
             "30, FizzBuzz",
             "60, FizzBuzz"
     })
-    void givenInputsDivisibleBy3and5FizzBuzzReturnsThatFizzBuzz(int input, String expected) {
+    void givenInputsDivisibleBy3and5FizzBuzzReturnsFizzBuzz(int input, String expected) {
 
         String actual = FizzBuzz.getFizzBuzzFrom(input);
 

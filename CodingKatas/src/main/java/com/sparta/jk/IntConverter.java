@@ -8,9 +8,24 @@ public class IntConverter {
     public static int getSingleIntFromArray(int[] numbers){
         int singleInt = 0;
         StringBuilder numberAsString = new StringBuilder();
-        for (int item : numbers) {
-            numberAsString.append(Integer.toString(item));
+        boolean numberStarted = false;
+        if(numbers.length > 0){
+            for (int item : numbers) {
+                if(numberStarted){
+                    if(item == 0){
+                        continue;
+                    }
+                    else{
+                        numberStarted = true;
+                    }
+                }
+                numberAsString.append(Integer.toString(item));
+            }
         }
+        else{
+            numberAsString.append("0");
+        }
+
         singleInt = Integer.parseInt(numberAsString.toString());
 
         return singleInt;

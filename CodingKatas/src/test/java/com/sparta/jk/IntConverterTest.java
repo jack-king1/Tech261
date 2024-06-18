@@ -33,4 +33,13 @@ public class IntConverterTest {
         int expected = 1;
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    @DisplayName("Test if output is correct and returns the output 1 for the input 00001.")
+    void checkOutputOfIntConverterGivesTheValue1ForTheInput00001(){
+        int[] numbers = new int[] {0,0,0,0,1};
+        int actual = IntConverter.getSingleIntFromArray(numbers);
+        int expected = 1;
+        Assertions.assertEquals(expected, actual);
+    }
 }

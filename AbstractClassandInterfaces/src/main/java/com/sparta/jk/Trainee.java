@@ -4,6 +4,7 @@ public abstract class Trainee {
     public String name;
     public int age;
     public String email;
+    public int phone;
 
     public Trainee(String name, int age, String email, int phone) {
         this.name = name;
@@ -11,7 +12,7 @@ public abstract class Trainee {
         this.email = email;
         this.phone = phone;
     }
-
+    
     public int getPhone() {
         return phone;
     }
@@ -44,5 +45,5 @@ public abstract class Trainee {
         this.name = name;
     }
 
-    public int phone;
+
 }

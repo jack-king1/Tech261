@@ -3,7 +3,7 @@ package com.sparta.jk;
 public class FizzBuzz {
     public static String getFizzBuzzFrom(int num){
 
-        String fizzBuzzString = Integer.toString(num);
+        String fizzBuzzString = "";
 
         if(num % 3 == 0){
             fizzBuzzString = "";
@@ -14,6 +14,9 @@ public class FizzBuzz {
             fizzBuzzString += "Buzz";
         }
 
+        if(fizzBuzzString == ""){
+            fizzBuzzString = Integer.toString(num);
+        }
         return fizzBuzzString;
     }
 }

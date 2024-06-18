@@ -59,4 +59,43 @@ public class FizzBuzzTests {
 
         Assertions.assertEquals(expected, actual);
     }
+
+    @ParameterizedTest
+    @CsvSource({
+            "3, Fizz",
+            "6, Fizz",
+            "33, Fizz"
+    })
+    void givenInputsDivisibleBy3FizzBuzzReturnsThatFizz(int input, String expected) {
+
+        String actual = FizzBuzz.getFizzBuzzFrom(input);
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+            "5, Buzz",
+            "10, Buzz",
+            "50, Buzz"
+    })
+    void givenInputsDivisibleBy5FizzBuzzReturnsThatFizz(int input, String expected) {
+
+        String actual = FizzBuzz.getFizzBuzzFrom(input);
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+            "15, FizzBuzz",
+            "30, FizzBuzz",
+            "60, FizzBuzz"
+    })
+    void givenInputsDivisibleBy3and5FizzBuzzReturnsThatFizzBuzz(int input, String expected) {
+
+        String actual = FizzBuzz.getFizzBuzzFrom(input);
+
+        Assertions.assertEquals(expected, actual);
+    }
 }

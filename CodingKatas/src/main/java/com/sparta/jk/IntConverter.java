@@ -1,7 +1,5 @@
 package com.sparta.jk;
 
-import java.util.ArrayList;
-
 public class IntConverter {
     private int[] numbersToConvert;
 

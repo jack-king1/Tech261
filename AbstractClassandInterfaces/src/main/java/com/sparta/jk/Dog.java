@@ -1,43 +1,20 @@
 package com.sparta.jk;
 
-public class Dog {
+public class Dog extends Animal{
     private String name;
     private String breed;
     private int age;
 
-    //constructer
-    public Dog(String name, String breed, int age) {
-        this.name = name;
-        this.breed = breed;
-        this.age = age;
+    public Dog(String name, int age, String breed) {
+        super(name, age, breed);
     }
 
-    public String getName() {
-        return name;
-    }
+    //overloading
+    //1. Return type
+    //2. type of parameters
+    //3. OR order of parameters
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getBreed() {
-        return breed;
-    }
-
-    public void setBreed(String breed) {
-        this.breed = breed;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public static void main(String args[]){
-        Dog myDog = new Dog("Lilly", "Cockapoo", 12);
-        System.out.println(myDog.name);
+    public void play(String name){
+        System.out.println(name + " wants to play with " + super.getName() +"!");
     }
 }

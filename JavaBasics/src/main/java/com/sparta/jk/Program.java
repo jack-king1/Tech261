@@ -4,7 +4,9 @@ public class Program {
     public static void main(String[] args)
     {
         int timeOfDay = 5;
-        System.out.println(getTimeofDay(timeOfDay));
+        for(int i = 0; i < 24; i++){
+            System.out.println(i + " " + getTimeofDay(i));
+        }
     }
 
     public static class TimeofDay{
@@ -20,7 +22,7 @@ public class Program {
         if(currentTime > TimeofDay.endOfDay) return "Invalid Time";
 
         if(currentTime >= TimeofDay.morningStart && currentTime < TimeofDay.afterNoonStart) return TimeofDay.greetings[0];
-        else if (currentTime > TimeofDay.morningStart && currentTime <= TimeofDay.eveningStart) return TimeofDay.greetings[1];
+        else if (currentTime >= TimeofDay.afterNoonStart && currentTime < TimeofDay.eveningStart) return TimeofDay.greetings[1];
         else return TimeofDay.greetings[2];
 
     }

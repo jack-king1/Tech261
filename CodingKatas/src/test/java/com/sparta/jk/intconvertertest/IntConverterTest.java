@@ -1,5 +1,6 @@
-package com.sparta.jk;
+package com.sparta.jk.intconvertertest;
 
+import com.sparta.jk.integerarrayconverter.IntConverter;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;

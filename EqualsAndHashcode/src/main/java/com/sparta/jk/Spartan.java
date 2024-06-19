@@ -41,6 +41,6 @@ public class Spartan {
     @Override
     public int hashCode() {
         return Objects.hash(firstName, lastName);
-        
+
     }
 }

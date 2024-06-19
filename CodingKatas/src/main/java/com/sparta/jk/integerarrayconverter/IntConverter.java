@@ -1,11 +1,8 @@
-package com.sparta.jk;
+package com.sparta.jk.integerarrayconverter;
 
 public class IntConverter {
-    private int[] numbersToConvert;
 
     public static int getSingleIntFromArray(int[] numbers){
-        int singleInt = 0;
-
         StringBuilder numberAsString = new StringBuilder();
 
         boolean leadingZerosEnded = false;

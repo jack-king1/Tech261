@@ -1,10 +1,11 @@
 package com.sparta.jk;
 
-public abstract class Trainee {
+public abstract class Trainee implements Trainable {
     public String name;
     public int age;
     public String email;
     public int phone;
+
 
     public Trainee(String name, int age, String email, int phone) {
         this.name = name;

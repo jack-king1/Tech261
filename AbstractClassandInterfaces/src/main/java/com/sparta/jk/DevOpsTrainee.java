@@ -35,8 +35,6 @@ public class DevOpsTrainee extends Trainee implements Trainable{
 
     public String[] projects;
 
-
-
     @Override
     public void study() {
 

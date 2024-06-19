@@ -5,20 +5,23 @@ public class IntConverter {
 
     public static int getSingleIntFromArray(int[] numbers){
         int singleInt = 0;
+
         StringBuilder numberAsString = new StringBuilder();
-        boolean numberStarted = false;
+
+        boolean leadingZerosEnded = false;
+
         if(numbers.length > 0){
             for (int item : numbers) {
-                if(numberStarted){
+                if(leadingZerosEnded){
                     if(item == 0){
                         continue;
                     }
                     else{
-                        numberStarted = true;
+                        leadingZerosEnded = true;
                     }
                 }
                 int absInt = Math.abs(item);
-                numberAsString.append(Integer.toString(absInt));
+                numberAsString.append(absInt);
             }
         }
         else{

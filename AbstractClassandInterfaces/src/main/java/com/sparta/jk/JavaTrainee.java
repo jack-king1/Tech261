@@ -1,6 +1,6 @@
 package com.sparta.jk;
 
-public class JavaTrainee extends Trainee implements Trainable{
+public class JavaTrainee extends Trainee implements Trainable, Teachable, Teachable2{
 
     public int experience;
     public String[] certifications;
@@ -46,11 +46,15 @@ public class JavaTrainee extends Trainee implements Trainable{
 
     @Override
     public void study() {
-
+        Teachable.super.teach();
     }
 
     @Override
     public void train() {
+    }
 
+    @Override
+    public void teach() {
+        Teachable.super.teach();
     }
 }

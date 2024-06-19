@@ -10,13 +10,18 @@ public class IdenticalNeighbours {
 
         int identicalCount = 1;
         int previousNumber = -1;
+        boolean previousNumberSet = false;
 
         for (int num : numbers) {
-            if(isIdenticalNumber(num, previousNumber)){
-                identicalCount++;
+            if(!previousNumberSet){
+                previousNumberSet = true;
             }
-            else identicalCount = 1;
-
+            else{
+                if(isIdenticalNumber(num, previousNumber)){
+                    identicalCount++;
+                }
+                else identicalCount = 1;
+            }
             previousNumber = num;
             if(identicalCount >= 3) break;
         }

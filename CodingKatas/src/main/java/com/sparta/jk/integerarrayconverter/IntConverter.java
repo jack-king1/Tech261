@@ -3,6 +3,8 @@ package com.sparta.jk.integerarrayconverter;
 public class IntConverter {
 
     public static int getSingleIntFromArray(int[] numbers){
+        int singleInt = 0;
+
         StringBuilder numberAsString = new StringBuilder();
 
         boolean leadingZerosEnded = false;

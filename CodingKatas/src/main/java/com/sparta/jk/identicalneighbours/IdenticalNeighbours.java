@@ -20,7 +20,6 @@ public class IdenticalNeighbours {
             previousNumber = num;
             if(identicalCount >= 3) break;
         }
-        System.out.println(identicalCount);
         return identicalCount >= 3;
     }
 

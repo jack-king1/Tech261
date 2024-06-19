@@ -37,6 +37,7 @@ public class Spartan {
                 getLastName().equals(otherSpartan.getLastName())); //Do they have the same last name. using the String equals method.
     }
 
+    //
     @Override
     public int hashCode() {
         return Objects.hash(firstName, lastName);

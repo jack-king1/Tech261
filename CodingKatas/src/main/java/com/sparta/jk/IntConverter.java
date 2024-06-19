@@ -17,7 +17,8 @@ public class IntConverter {
                         numberStarted = true;
                     }
                 }
-                numberAsString.append(Integer.toString(item));
+                int absInt = Math.abs(item);
+                numberAsString.append(Integer.toString(absInt));
             }
         }
         else{

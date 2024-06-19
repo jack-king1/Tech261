@@ -58,4 +58,13 @@ public class IntConverterTest {
         int expected = 32236;
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    @DisplayName("Test if array values with negative didgits results in a positive output")
+    void checkOutputIsNotNegative(){
+        int[] numbers = new int[] {0,-0,0,-32,2,-3,-6};
+        int actual = IntConverter.getSingleIntFromArray(numbers);
+        int expected = 32236;
+        Assertions.assertEquals(expected, actual);
+    }
 }

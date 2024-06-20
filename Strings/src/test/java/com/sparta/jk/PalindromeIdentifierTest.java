@@ -26,7 +26,6 @@ public class PalindromeIdentifierTest {
 
     @Test
     void checkIfFunctionIsSpaceSensitive(){
-
         String input = "racecar ";
         boolean actual = PalindromeIdentifier.isPalinDrome(input);
         boolean expected = false;

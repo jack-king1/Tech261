@@ -31,11 +31,12 @@ public class IdenticalNeighbours {
         final int MIN_ARRAY_LENGTH = 3;
         if(arrayToCheck == null) return false;
         else if(arrayToCheck.length < MIN_ARRAY_LENGTH) return false;
-
         return true;
     }
 
     public static boolean isIdenticalNumber(int currentNum, int previousNum){
         return currentNum == previousNum;
     }
+
+
 }

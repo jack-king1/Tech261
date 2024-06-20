@@ -1,5 +1,7 @@
 package com.sparta.jk;
 
+import java.util.ArrayList;
+
 public class App {
     public static void main(String[] args) {
 //        String string1 = "Hello";
@@ -17,6 +19,9 @@ public class App {
 //        System.out.println(System.identityHashCode(string3)); //force the base class hashCode.
 //        System.out.println(System.identityHashCode(string4)); //force the base class hashCode.
 //
-        System.out.println(PalindromeIdentifier.isPalinDrome("racecar"));
+        //System.out.println(PalindromeIdentifier.isPalinDrome("The rac'ecar!%^&*() is going racing against other racecar"));
+
+        ArrayList<String> longestPalindrome = PalindromeIdentifier.getLongestPalindromeInSentence("ara loool race^car racecar lllllll");
+        System.out.println(longestPalindrome);
     }
 }

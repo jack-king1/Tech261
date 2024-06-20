@@ -21,7 +21,7 @@ public class App {
 //
         //System.out.println(PalindromeIdentifier.isPalinDrome("The rac'ecar!%^&*() is going racing against other racecar"));
 
-        ArrayList<String> longestPalindrome = PalindromeIdentifier.getLongestPalindromeInSentence("ara loool race^car racecar lllllll");
+        ArrayList<String> longestPalindrome = PalindromeIdentifier.getLongestPalindromeInSentence("ara loool race^car racecar lllllll lllllll loooool loooool mmmmmmm mmmmmmm");
         System.out.println(longestPalindrome);
     }
 }

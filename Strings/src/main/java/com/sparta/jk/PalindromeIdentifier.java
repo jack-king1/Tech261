@@ -37,7 +37,7 @@ public class PalindromeIdentifier {
                         longestPalindromes.add(word);
                     }
                     else if(word.length() == longestPalindromes.get(0).length() &&
-                            !word.equals(longestPalindromes.get(0))){
+                            !isAlreadyInLongestPalindromesList(longestPalindromes, word)){
                         longestPalindromes.add(word);
                     }
                 }
@@ -45,6 +45,12 @@ public class PalindromeIdentifier {
         }
 
         return longestPalindromes;
+    }
+
+    public static boolean isAlreadyInLongestPalindromesList(ArrayList<String> longestPalindrome, String word){
+
+
+        return longestPalindrome.contains(word);
     }
 
     public static boolean isPalinDrome(String potentialPalindrome){

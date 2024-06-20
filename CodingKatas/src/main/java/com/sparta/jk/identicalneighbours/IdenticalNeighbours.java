@@ -16,11 +16,10 @@ public class IdenticalNeighbours {
             if(!previousNumberSet){
                 previousNumberSet = true;
             }
-            else{
-                if(isIdenticalNumber(num, previousNumber)){
+            else {
+                if (isIdenticalNumber(num, previousNumber)) {
                     identicalCount++;
-                }
-                else identicalCount = 1;
+                } else identicalCount = 1;
             }
             previousNumber = num;
             if(identicalCount >= 3) break;
